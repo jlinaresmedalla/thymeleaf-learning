@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+>
+<head>
+    <meta charset="UTF-8">
+    <title>Fragment expression</title>
+</head>
+<body>
+  <h1>Fragment expression demo:</h1>
+  <div th:replace="~{common/header :: header}"></div>
+  <div>
+    <h1>Page body</h1>
+  </div>
+  <div th:replace="~{common/footer.html :: footer}"></div>
+  <!--template can use .html extension
+  th:replace is used to replace the content of the div with the content of the fragment
+  th:insert is used to insert the content of the fragment into the div, this inserted div
+            will be a child of the div and the default position is at the end of the div-->
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+>
+<head>
+    <meta charset="UTF-8">
+    <title>Link expressions</title>
+    <link rel="stylesheet" th:href="@{/css/demo.css}">
+</head>
+<body>
+  <h1>Link Expressions demo: </h1>
+  <a th:href="@{/hello-world}">Hello world, welcome!</a>
+  <br>
+  <a th:href="@{/selection-expression}">selection page</a>
+  <br>
+  <a th:href="@{/link-expression/{id}(id=${id})}">autocalling by id</a>
+</body>
+</html>
